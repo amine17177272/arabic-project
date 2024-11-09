@@ -1,0 +1,164 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Amiri', serif;
+    /* Add an Arabic-friendly font */
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.8;
+    text-align: right;
+    /* Align Arabic text to the right */
+    direction: rtl;
+    /* Right-to-left text direction */
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #004d40;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.intro {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+main {
+    margin-top: 40px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #00796b;
+    border-bottom: 2px solid #004d40;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    /* color: #555; */
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+footer {
+    margin-top: 40px;
+    background-color: #00796b;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 20px;
+}
+
+footer .conclusion {
+    font-size: 20px;
+    margin: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* References Section */
+.references {
+    margin-top: 30px;
+    font-size: 18px;
+    /* color: #444; */
+}
+
+.references h3 {
+    font-size: 24px;
+    /* color: #004d40; */
+    margin-bottom: 15px;
+}
+
+.references ul {
+    list-style-type: none;
+}
+
+.references li {
+    margin-bottom: 10px;
+}
+
+.references li::before {
+    content: "•";
+    color: #00796b;
+    margin-right: 10px;
+}
+
+/* Animation for References */
+.references li {
+    opacity: 0;
+    animation: fadeIn 2s forwards infinite;
+}
+/* تنسيق العنصر <li> */
+.styled-list-item {
+    list-style-type: none; /* إزالة النقاط من القائمة */
+    margin-bottom: 15px; /* إضافة مسافة أسفل العنصر */
+    font-size: 18px; /* تحديد حجم الخط */
+  }
+  
+  /* تنسيق الرابط <a> */
+  .styled-list-item a {
+    text-decoration: none; /* إزالة الخط أسفل الرابط */
+    color: white;
+    font-weight: bold; /* جعل النص عريض */
+    transition: color 0.3s ease, transform 0.3s ease; /* إضافة تأثير الانتقال على اللون والحجم */
+  }
+  
+  /* تغيير لون الرابط عند التمرير */
+  .styled-list-item a:hover {
+    color: black; /* تغيير اللون عند التمرير */
+    transform: scale(1.1); /* تكبير النص قليلاً عند التمرير */
+  }
+  
+  /* إضافة تأثير عند الضغط على الرابط */
+  .styled-list-item a:active {
+    color: #00332e; /* تغيير اللون عند الضغط */
+    transform: scale(1.05); /* تقليص الحجم قليلاً عند الضغط */
+  }
+  
+.references li:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.references li:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.references li:nth-child(3) {
+    animation-delay: 0.6s;
+}
+.references li:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
